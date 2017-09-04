@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2961" y="34"/>
+            <point key="canvasLocation" x="-3065" y="36"/>
         </scene>
         <!--LeagueVC-->
         <scene sceneID="TQG-Yq-yI0">
@@ -126,7 +126,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6Q-e8-UQ0" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6Q-e8-UQ0" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="656" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.43254841550000001" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -154,6 +154,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="nXb-7L-djy" eventType="touchUpInside" id="1we-Ag-FvE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-BP-vgW" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="80" width="414" height="60"/>
@@ -165,6 +168,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="nXb-7L-djy" eventType="touchUpInside" id="CLy-Xv-qJt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxd-Mg-pdx" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160" width="414" height="60"/>
@@ -176,6 +182,9 @@
                                         <state key="normal" title="Co-Ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="nXb-7L-djy" eventType="touchUpInside" id="QYk-3b-I6I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -212,6 +221,7 @@
                         <viewLayoutGuide key="safeArea" id="G7W-9g-bpq"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="K6Q-e8-UQ0" id="VgO-oG-c7u"/>
                         <segue destination="I6e-CB-LnI" kind="show" identifier="skillVCSegue" id="mEQ-4O-QWc"/>
                     </connections>
                 </viewController>
@@ -309,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQT-g0-EbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1615.2" y="35.532233883058474"/>
+            <point key="canvasLocation" x="-1507" y="36"/>
         </scene>
     </scenes>
     <resources>
